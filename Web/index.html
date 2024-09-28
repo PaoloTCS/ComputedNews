@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Graph - Coming Soon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .coming-soon {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 20px 0;
+        }
+        .graphic {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            background-color: #3498db;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .graphic svg {
+            width: 180px;
+            height: 180px;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI News Graph Project</h1>
+    <div class="graphic">
+        <svg viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="none" stroke="#fff" stroke-width="2"/>
+            <!-- Nodes -->
+            <circle cx="30" cy="30" r="5" fill="#fff"/>
+            <circle cx="70" cy="30" r="5" fill="#fff"/>
+            <circle cx="50" cy="70" r="5" fill="#fff"/>
+            <circle cx="20" cy="60" r="5" fill="#fff"/>
+            <circle cx="80" cy="60" r="5" fill="#fff"/>
+            <!-- Edges -->
+            <line x1="30" y1="30" x2="70" y2="30" stroke="#fff" stroke-width="2">
+                <animate attributeName="x2" values="30;70;30" dur="3s" repeatCount="indefinite" />
+            </line>
+            <line x1="30" y1="30" x2="50" y2="70" stroke="#fff" stroke-width="2">
+                <animate attributeName="x2" values="30;50;30" dur="3s" repeatCount="indefinite" />
+                <animate attributeName="y2" values="30;70;30" dur="3s" repeatCount="indefinite" />
+            </line>
+            <line x1="70" y1="30" x2="50" y2="70" stroke="#fff" stroke-width="2">
+                <animate attributeName="x2" values="70;50;70" dur="3s" repeatCount="indefinite" />
+                <animate attributeName="y2" values="30;70;30" dur="3s" repeatCount="indefinite" />
+            </line>
+            <line x1="20" y1="60" x2="50" y2="70" stroke="#fff" stroke-width="2">
+                <animate attributeName="x2" values="20;50;20" dur="3s" repeatCount="indefinite" />
+                <animate attributeName="y2" values="60;70;60" dur="3s" repeatCount="indefinite" />
+            </line>
+            <line x1="80" y1="60" x2="50" y2="70" stroke="#fff" stroke-width="2">
+                <animate attributeName="x2" values="80;50;80" dur="3s" repeatCount="indefinite" />
+                <animate attributeName="y2" values="60;70;60" dur="3s" repeatCount="indefinite" />
+            </line>
+        </svg>
+    </div>
+    <p>Welcome to the AI News Graph project! Our goal is to create an interactive visualization of AI news, connecting concepts, events, and key figures in the field of artificial intelligence.</p>
+    <p>Using cutting-edge graph visualization techniques and natural language processing, we aim to provide a unique way to explore and understand the rapidly evolving world of AI. We're leveraging Claude AI as a powerful programming tool to enhance our development process and bring innovative solutions to this project.</p>
+    <div class="coming-soon">Coming Soon!</div>
+    <p>We're hard at work building this exciting tool. Check back soon for updates!</p>
+</body>
+</html>
